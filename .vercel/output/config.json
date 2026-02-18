@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/api/collections/(.+)/seed",
+      "dest": "/api/collections/handler"
+    },
+    {
+      "src": "/api/collections/(.+)/(.+)",
+      "dest": "/api/collections/handler"
+    },
+    {
+      "src": "/api/collections/(.+)",
+      "dest": "/api/collections/handler"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
