@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/collections/:collection/seed", "destination": "/api/collections/handler" },
+    { "source": "/api/collections/:collection/:id", "destination": "/api/collections/handler" },
+    { "source": "/api/collections/:collection", "destination": "/api/collections/handler" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
